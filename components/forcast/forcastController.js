@@ -20,7 +20,6 @@
         cnt: $scope.numOfDays
       });
 
-
       // Convert date
       $scope.dateConvert = function(date){
         return new Date(date * 1000);
