@@ -1,0 +1,14 @@
+<div class="container">
+
+  <h1>The forcast for {{ location }}</h1>
+
+  <a href="#/forcast/2">2</a>
+  <a href="#/forcast/5">5</a>
+  <a href="#/forcast/7">7</a>
+
+
+  <div ng-repeat="eachDay in weatherResult.list">
+    <search-results weather-day="eachDay" date-to-standard="dateConvert(date)" convert-to-celsius="toCelcius(degree)"></search-results>
+  </div>
+
+</div>
