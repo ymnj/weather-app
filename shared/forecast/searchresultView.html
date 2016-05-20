@@ -1,0 +1,21 @@
+<div>
+
+  <div>
+    <h4>{{ dateToStandard({date: weatherDay.dt}) | date: dateFormat }}</h4>
+  </div>
+  <div>
+    <span class='weather-description'>{{ weatherDay.weather[0].description }}</span>
+  </div>
+
+  <div class="icon-temp-wrap col-sm-12 col-md-6">
+    <img class="weather-icon" ng-src="{{ weatherIcon({ obj: weatherDay }) }}"/> <span class="weather-temp">{{ convertToCelsius({degrees: weatherDay.temp.day}) }}&degC</span>
+  </div>
+  <div class="extra-descrip-wrap col-sm-12 col-md-6">
+    <ul>
+      <li>Clouds: {{ weatherDay.clouds }}&#37;</li>
+      <li>Humidity: {{ weatherDay.humidity }}&#37; </li>
+      <li>Winds: {{ weatherDay.speed }} m/s</li>
+    </ul>
+  </div>
+
+</div>

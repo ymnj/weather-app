@@ -13,13 +13,13 @@
         templateUrl: 'components/home/home.html',
         controller: 'homeController'
       })
-      .when( '/forcast', {
-        templateUrl: 'components/forcast/forcast.html',
-        controller: 'forcastController'
+      .when( '/forecast', {
+        templateUrl: 'components/forecast/forecast.html',
+        controller: 'forecastController'
       })
-      .when( '/forcast/:days', {
-        templateUrl: 'components/forcast/forcast.html',
-        controller: 'forcastController'
+      .when( '/forecast/:days', {
+        templateUrl: 'components/forecast/forecast.html',
+        controller: 'forecastController'
       });
 
   }

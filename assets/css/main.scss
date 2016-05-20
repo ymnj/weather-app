@@ -1,0 +1,80 @@
+@mixin vertical-center {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+// ************** Index ************** //
+
+body { 
+  background: url('/assets/images/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+// ************** Home ************** //
+
+.search-box {
+  @include vertical-center;
+  height: 100px;
+
+  .has-feedback .form-control{
+    padding: 0;
+  }
+
+  input[id="location"] {
+    text-align: center; 
+  }
+
+  input[type="submit"] {
+    margin-top: 2.5%;
+  }
+}
+
+// ************** Forecast ************** //
+
+.search-results-wrap {
+  @include vertical-center;
+  border: 2px solid white;
+  max-height: min-content;
+
+    h1, h4 {
+      margin: 0;
+    }
+
+    .weather-description {
+      text-transform: capitalize;
+    }
+
+    .icon-temp-wrap {
+
+      padding: 0;
+  
+      .weather-icon {
+        // width: 20%;
+      }
+
+      .weather-temp {
+        font-size: 2em;
+      }
+    }
+
+    .extra-descrip-wrap {
+      padding: 0;
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+      }
+    }
+}

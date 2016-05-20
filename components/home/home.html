@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-lg-offset-4">
-      <form>
-        <div class="form-group">
-          <label for="location">Location</label>
-          <input type="text" class="form-control" id="location" placeholder="City" ng-model="location">
-          <a href="#/forcast" class="btn btn-default">Submit</a>
+    <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 search-box">
+      <form ng-submit="locationSubmit()">
+        <div class="form-group text-center has-feedback">
+          <label for="location" class="sr-only">Location</label>
+          <input type="text" class="form-control" id="location" ng-model="location" ng-focus="focused = true" ng-blur="focused = false">
+          <span ng-if="!focused" class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+          <input type="submit" class="btn btn-default" value="Check weather"></input>
         </div>
       </form>
     </div>

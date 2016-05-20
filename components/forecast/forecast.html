@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 search-results-wrap">
+      <h1>{{ weatherResult.city.name }}, {{ weatherResult.city.country}}</h1>
+      <!-- <a href="#/forecast/2">2</a>
+      <a href="#/forecast/5">5</a>
+      <a href="#/forecast/7">7</a> -->
+
+      <div ng-repeat="eachDay in weatherResult.list">
+        <search-results weather-day="eachDay" date-format="EEEE h:mma" date-to-standard="dateConvert(date)" convert-to-celsius="toCelsius(degrees)" weather-icon="icon(obj)"></search-results>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+</div>

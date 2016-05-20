@@ -1,0 +1,47 @@
+body {
+  background: url("/assets/images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.search-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100px; }
+  .search-box .has-feedback .form-control {
+    padding: 0; }
+  .search-box input[id="location"] {
+    text-align: center; }
+  .search-box input[type="submit"] {
+    margin-top: 2.5%; }
+
+.search-results-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid white;
+  max-height: min-content; }
+  .search-results-wrap h1, .search-results-wrap h4 {
+    margin: 0; }
+  .search-results-wrap .weather-description {
+    text-transform: capitalize; }
+  .search-results-wrap .icon-temp-wrap {
+    padding: 0; }
+    .search-results-wrap .icon-temp-wrap .weather-temp {
+      font-size: 2em; }
+  .search-results-wrap .extra-descrip-wrap {
+    padding: 0; }
+    .search-results-wrap .extra-descrip-wrap ul {
+      padding: 0; }
+    .search-results-wrap .extra-descrip-wrap li {
+      list-style-type: none; }
+
+/*# sourceMappingURL=main.css.map */

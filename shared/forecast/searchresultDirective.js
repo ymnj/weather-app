@@ -8,12 +8,14 @@
   function searchResults(){
     return {
       restrict: 'E',  
-      templateUrl: 'shared/forcast/searchresultView.html',
+      templateUrl: 'shared/forecast/searchresultView.html',
       replace: true,
       scope: {
         weatherDay: '=',
+        dateFormat: '@',
         dateToStandard: '&',
-        convertToCelsius: '&'
+        convertToCelsius: '&',
+        weatherIcon: '&'
       }
     }
   }
